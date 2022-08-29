@@ -33,7 +33,7 @@ html{
 
 /* Carousel-Section */
 .carousel-inner {
-    height: 100vh;
+    height: 100%;
 }
 
 .form {
