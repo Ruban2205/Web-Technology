@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URK20CS2001 Exp-5 | Java Script DOM Elements and Events</title>
 
     <!-- Bootstrap Cdn -->
@@ -14,48 +15,181 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/rubnagino-favicon-logo.png">
+
 </head>
 
 <body>
     <header id="navigation">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/rubnagino-favicon-logo.png" alt="Navbar-brand-icon" width="32" height="32"
+                        class="d-inline-block align-text-top">&emsp;URK20CS2001 | Exp-5</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Questions</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a href="#" class="dropdown-item">Question-1</a></li>
+                                <li><a href="#" class="dropdown-item">Question-2</a></li>
+                                <li><a href="#" class="dropdown-item">Question-3</a></li>
+                                <li><a href="#" class="dropdown-item">Question-4</a></li>
+                                <li><a href="#" class="dropdown-item">Question-5</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Question-1 Section-->
+    <section id="qn1">
+        <div class="container">
+            <h3 class="qn-title">Question-1 | Find short and long string</h3>
+            <p class="question">Write a function that accepts a string as a parameter and find the <b>shortest and
+                    longest word</b>
+                within the String. <br> Example String: 'Web Development Tutorial' <br> Expected Output: <br>
+                Shortest: Web <br> Longest: Development</p>
+            <form>
+                <div class="mb-3">
+                    <label for="string" class="form-label"><b>Enter a String</b></label>
+                    <input type="text" class="form-control" id="string"
+                        placeholder="Example string: 'Web Development Tutorial'" required>
+                </div>
+                <p>Shortest string: <span id="short-string"></span></p>
+                <p>Longest string: <span id="long-string"></span></p>
+                <button type="submit" class="btn btn-primary px-5" onclick="checkString()">Check Results</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question-2 Section -->
+    <section id="qn2">
+        <div class="container">
+            <h3 class="qn-title">Question-2 | BMI Calculator</h3>
+            <p class="question"><b>BMI Calculator:</b> The following HTML snippet shows the skeletion of a BMI
+                Calculator. Write the calculate() function that takes the weight and height in the text boxes and
+                displays the BMI in the span with the id of "score." BMI is calcuated from the equation: weight/(height
+                * height). You should also describe the person's body type based on their BMI Score using the following
+                criteria:
+            <ol>
+                <li>Underweight: < 18</li>
+                <li>Normal: 18 - 25</li>
+                <li>Overweight: 25 - 30</li>
+                <li>Obese: > 30</li>
+            </ol>
+            </p>
+            <form>
+                <div class="mb-3">
+                    <label for="height" class="form-label"><b>Height:</b> </label>
+                    <input type="text" class="form-control" id="height" placeholder="Enter your height" required>
+
+                    <label for="weight" class="form-label"><b>Weight:</b> </label>
+                    <input type="text" class="form-control" id="weight" placeholder="Enter your weight" required>
+                </div>
+                <p><b>BMI Result: </b><span id="bmi-result"></span></p>
+                <p><b>BMI Value: </b><span id="bmi-value"></span></p>
+                <button type="button" onclick="calculateBMI()" class="btn btn-primary px-5">Calculate your BMI</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question-3 | Fruit Farm-->
+    <section id="qn3">
+        <div class="container">
+            <h3 class="qn-title">Question-3 | Fruit Farm</h3>
+            <p class="question"><b>Fruit Farm: </b>The following HTML snippet is from a webpage that allows users to
+                design rectangular fruit farm beds. When you click the "Plant Garden" Button, the page should generate a
+                rectangular grid of fruit images in the div with the id of the "garden". The dimensions of grid are
+                given by the values entered in the text boxes. Write the <b>grow() JavaScript function to complete the
+                    functionality for the webpage. You should</b> randomly display either "apple.jpg" or "orange.jpg"
+                for each fruit image, and either fruit should show up with equal probability.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="string" class="form-label"><b>Rows: </b></label>
+                    <input type="text" class="form-control" id="row" placeholder="Enter the rows" required>
+                    <label for="string" class="form-label"><b>Columns: </b></label>
+                    <input type="text" class="form-control" id="column" placeholder="Enter the columns" required>
+                </div>
+                <p><b>Result:</b></p>
+                <div id="garden" class="mb-3"></div>
+                <button type="submit" class="btn btn-primary px-5">Check Results</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question - 4 | Currency Converter -->
+    <section id="qn4">
+        <div class="container">
+            <h3 class="qn-title">Question-4 | Currency converter</h3>
+            <p class="question"><b>The Currency converter: </b>The following HTML snippet shows the skeleton of a
+                rupees-to-dollars, dollars-to-rupees conversion tool. Write the convert() function that takes the value
+                in the text input and converts it from the unit selected in the left dropdown box o the unit selected on
+                the right. The unit should be displayed in the empty span with the id of "answer." The conversion factor
+                from rupees to dollars is 0.015, and the conversion factor from dollars to rupees is 67.12. You should
+                edit the HTML to add id's to the elements as necessary and you may assume valid input.</p>
+            <form>
+                <div class="mb-3">
+                    <label for="string" class="form-label"><b>Enter amount: </b></label>
+                    <input type="text" class="form-control mb-3" id="currency" placeholder="Enter the amount to convert"
+                        required>
+                    <p><b>From: </b></p>
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Choose Currency here...</option>
+                        <option value="1">Indian Rupee</option>
+                        <option value="2">US Dollar</option>
+                    </select>
+                    <p><b>To: </b></p>
+                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                        <option selected>Choose Currency here...</option>
+                        <option value="1">Indian Rupee</option>
+                        <option value="2">US Dollar</option>
+                    </select>
+                </div>
+                <p><b>Result:</b></p>
+                <div id="garden"></div>
+                <button type="submit" class="btn btn-primary px-5">Convert</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question - 5 | Coin flip -->
+    <section id="qn5">
+        <div class="container">
+            <h3 class="qn-title">Question-5 | Coin Flip</h3>
+            <p class="question"><b>Coin Flip: </b> Write JavaScript code to randomly change the src of the img in the
+                HTML snippet to "heads.jpg" or "tails.jpg" when the "Flip!" button is pressed. The image should change
+                to the heads or tails picture with equal probability. Keep track of how many flips have resulted in
+                heads and tails and report the results beneath the button in two spans with ids "num_heads" and
+                "num_tails" respectively. You should write JavaScript code to attach the event handler to the button and
+                you may assume the user enters valid input.</p>
+            <form>
+                <div class="mb-3">
+                    <h3>Heads or Tails?</h3>
+                    <img src="assets/images/coin-head.jpg" id="coin-img" alt="Coin-image"><br>
+                    <label for="string" class="form-label"><b>Rows: </b></label>
+                    <input type="text" class="form-control" id="head-row" placeholder="Enter the rows" required>
+                    <label for="string" class="form-label"><b>Columns: </b></label>
+                    <input type="text" class="form-control" id="head-column" placeholder="Enter the columns" required>
+                </div>
+                <p><b>Result:</b></p>
+                <div id="garden" class="mb-3"></div>
+                <button type="submit" class="btn btn-primary px-5">Check Results</button>
+            </form>
+        </div>
+    </section>
 
     <!-- External JavaScript -->
     <script src="js/main.js"></script>
