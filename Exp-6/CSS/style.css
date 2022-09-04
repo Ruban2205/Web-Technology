@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Section */
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-item,
+.search,
+.navbar-brand {
+    margin: 1rem;
+}
+
+.navbar {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
