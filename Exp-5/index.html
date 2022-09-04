@@ -38,11 +38,11 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Questions</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">Question-1</a></li>
-                                <li><a href="#" class="dropdown-item">Question-2</a></li>
-                                <li><a href="#" class="dropdown-item">Question-3</a></li>
-                                <li><a href="#" class="dropdown-item">Question-4</a></li>
-                                <li><a href="#" class="dropdown-item">Question-5</a></li>
+                                <li><a href="#qn1" class="dropdown-item">Question-1</a></li>
+                                <li><a href="#qn2" class="dropdown-item">Question-2</a></li>
+                                <li><a href="#qn3" class="dropdown-item">Question-3</a></li>
+                                <li><a href="#qn4" class="dropdown-item">Question-4</a></li>
+                                <li><a href="#qn5" class="dropdown-item">Question-5</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -143,24 +143,23 @@
             <form>
                 <div class="mb-3">
                     <label for="string" class="form-label"><b>Enter amount: </b></label>
-                    <input type="text" class="form-control mb-3" id="currency" placeholder="Enter the amount to convert"
+                    <input id="amount" type="text" class="form-control mb-3" placeholder="Enter the amount to convert"
                         required>
                     <p><b>From: </b></p>
-                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                    <select id="from" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
                         <option selected>Choose Currency type...</option>
-                        <option value="1">Indian Rupee</option>
-                        <option value="2">US Dollar</option>
+                        <option>Indian Rupee</option>
+                        <option>US Dollar</option>
                     </select>
                     <p><b>To: </b></p>
-                    <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                    <select id="to" class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
                         <option selected>Choose Currency type...</option>
-                        <option value="1">Indian Rupee</option>
-                        <option value="2">US Dollar</option>
+                        <option>Indian Rupee</option>
+                        <option>US Dollar</option>
                     </select>
                 </div>
-                <p><b>Result:</b></p>
-                <div id="garden"></div>
-                <button type="submit" class="btn btn-primary px-5">Convert</button>
+                <p><b>Result:</b>&nbsp;<span id="currency_result"></span></p>
+                <button type="button" onclick="convertCurrecny()" class="btn btn-primary px-5">Convert</button>
             </form>
         </div>
     </section>
@@ -187,6 +186,52 @@
                 <p><b>Result:</b></p>
                 <div id="garden" class="mb-3"></div>
                 <button type="submit" class="btn btn-primary px-5">Check Results</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Question - 6 | Birthday Cake Order form -->
+    <section id="qn6" class="mb-5">
+        <div class="container">
+            <h3 class="qn-title">Question-6 | Birthday cake order form</h3>
+            <p class="question"><b>Birthday cake order form: </b> The following HTML snippet represents a skeleton of a
+                price calculator for a cake order form. A 1/2Kg cake is Rs.100, a 1Kg cake is Rs.200 and a 2Kg cake is
+                Rs.400. Tax i an additional 9% to the order. The user must also pay a tip from 10-20% of the total cost
+                of the order after tax. Write the Java Script code necessary to calcualte and display the total cost of
+                the order in the span with the id of "price" when the user clicks the "Calculate Order" button. You
+                should write unobtrusive JavaScript code to attach the event handler to the button and you may assume
+                the user enters valid input.</p>
+            <form>
+                <div class="mb-3">
+                    <h3>Birthday cake order Form</h3>
+                    <label for="string" class="form-label"><b>Number of 1/2Kg Cakes? </b></label>
+                    <input type="text" class="form-control" id="small" placeholder="Enter in nos:">
+                    <label for="string" class="form-label"><b>Number of 1Kg Cakes? </b></label>
+                    <input type="text" class="form-control" id="medium" placeholder="Enter in nos: ">
+                    <label for="string" class="form-label"><b>Number of 2Kg Cakes? </b></label>
+                    <input type="text" class="form-control" id="large" placeholder="Enter in nos: ">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="10" name="tip" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        10%
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="15" name="tip" checked="checked"
+                        id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        15%
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="20" name="tip" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        20%
+                    </label>
+                </div>
+                <p class="mt-4"><b>Total Cost of Order: </b> <span id="total-price"></span></p>
+                <button type="button" onclick="cakeOrder()" class="btn btn-primary px-5">Caculate Total Cost</button>
             </form>
         </div>
     </section>

@@ -55,4 +55,38 @@ var fruitarr = ["apple.jpg", "dragon-fruit.jpg", "grapes.jpg", "mango.jpg", "ora
 document.getElementById("garden").innerHTML = "<img src=assets/images/apple.jpg width=100px height=100px>";
 
 
-// Question-4 | 
+// Question-4 | Currency Converter
+function convertCurrecny() {
+    var userInput = parseFloat(document.getElementById('amount').value);
+    var from = document.getElementById('from').value;
+    var to = document.getElementById('to').value;
+
+    if (from == "US Dollar" && to == "Indian Rupee") {
+        document.getElementById('currency_result').innerHTML = (userInput * 79.71);
+    } else if (from == "Indian Rupee" && to == "US Dollar") {
+        document.getElementById('currency_result').innerHTML = (userInput * 0.013);
+    } else if ((from == "US Dollar" && to == "US Dollar") || (from == "Indian Rupee" && to == "Indian Rupee")) {
+        document.getElementById('currency_result').innerHTML = "Same currencies can't be converted!!!";
+    }
+
+}
+
+// Question - 5 | Coin Flip
+
+
+
+// Question - 6 | Birthday Cake order Form
+function cakeOrder() {
+    var small = document.getElementById('small').value; 
+    var medium = document.getElementById('medium').value; 
+    var large = document.getElementById('large').value; 
+
+    var total = (small * 100) + (medium * 200) + (large * 400);
+    var taxAmount = ((9 / 100) * total) + total; 
+
+    var radioBtn = document.querySelector('input[name="tip"]:checked').value; 
+    var tip = ((radioBtn / 100) * taxAmount); 
+    var totalCost = taxAmount + tip; 
+
+    document.getElementById('total-price').innerHTML = totalCost;
+}

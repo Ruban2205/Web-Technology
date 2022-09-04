@@ -33,7 +33,11 @@
 
 /* Question-1 */
 #qn1{
-    margin-top: 150px;
+    padding-top: 200px;
+}
+
+#qn2, #qn3, #qn4, #qn5, #qn6{
+    padding-top: 150px;
 }
 
 .qn-title{
