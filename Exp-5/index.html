@@ -43,6 +43,7 @@
                                 <li><a href="#qn3" class="dropdown-item">Question-3</a></li>
                                 <li><a href="#qn4" class="dropdown-item">Question-4</a></li>
                                 <li><a href="#qn5" class="dropdown-item">Question-5</a></li>
+                                <li><a href="#qn6" class="dropdown-item">Question-6</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -125,7 +126,8 @@
                 </div>
                 <p><b>Result:</b></p>
                 <div id="garden" class="mb-3"></div>
-                <button type="submit" class="btn btn-primary px-5">Check Results</button>
+                <button type="button" onclick="grow()" class="btn btn-primary px-5">Grow Fruits</button>
+                <button type="button" onclick="refreshPage()" class="btn btn-dark px-5">Refresh</button>
             </form>
         </div>
     </section>
@@ -178,14 +180,10 @@
                 <div class="mb-3">
                     <h3>Heads or Tails?</h3>
                     <img src="assets/images/coin-head.jpg" id="coin-img" alt="Coin-image"><br>
-                    <label for="string" class="form-label"><b>Rows: </b></label>
-                    <input type="text" class="form-control" id="head-row" placeholder="Enter the rows" required>
-                    <label for="string" class="form-label"><b>Columns: </b></label>
-                    <input type="text" class="form-control" id="head-column" placeholder="Enter the columns" required>
                 </div>
-                <p><b>Result:</b></p>
-                <div id="garden" class="mb-3"></div>
-                <button type="submit" class="btn btn-primary px-5">Check Results</button>
+                <p><b>No of Heads: </b><span id="nos-head">0</span></p>
+                <p><b>No of Tails: </b><span id="nos-tail">0</span></p>
+                <button type="button" onclick="coinFlip()" class="btn btn-primary px-5">Flip Coin!!!</button>
             </form>
         </div>
     </section>
@@ -231,7 +229,7 @@
                     </label>
                 </div>
                 <p class="mt-4"><b>Total Cost of Order: </b> <span id="total-price"></span></p>
-                <button type="button" onclick="cakeOrder()" class="btn btn-primary px-5">Caculate Total Cost</button>
+                <button type="button" onclick="cakeOrder()" class="btn btn-primary px-6">Caculate Total Cost</button><br><br>
             </form>
         </div>
     </section>

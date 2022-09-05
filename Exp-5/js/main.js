@@ -51,8 +51,25 @@ function calculateBMI() {
 }
 
 // Question-3 | Fruit Farm
-var fruitarr = ["apple.jpg", "dragon-fruit.jpg", "grapes.jpg", "mango.jpg", "orange.jpg", "pineapple.jpg", "watermelon.jpg"];
-document.getElementById("garden").innerHTML = "<img src=assets/images/apple.jpg width=100px height=100px>";
+function grow(){
+    var row = document.getElementById('row').value; 
+    var column = document.getElementById('column').value; 
+    var imgArray = ["assets/images/apple.jpg", "assets/images/orange.jpg"];
+    var garden = document.getElementById('garden');
+
+    for(let i=0; i<row; i++){
+        for (let j=0; j<column; j++){
+            var fruits = Math.floor(Math.random() * 2);
+            var img = '<img src=' + imgArray[fruits] + ' width="150px" height="150px"></img>';
+            garden.innerHTML += img; 
+        }
+        garden.innerHTML+="<br>";
+    }
+}
+
+function refreshPage(){
+    window.location.reload(); 
+}
 
 
 // Question-4 | Currency Converter
@@ -72,7 +89,26 @@ function convertCurrecny() {
 }
 
 // Question - 5 | Coin Flip
+function coinFlip(){
+    var image = document.getElementById('coin-img');
+    var head = document.getElementById('nos-head');
+    var tail = document.getElementById('nos-tail');
 
+    var parseHead = parseInt(head.innerHTML);
+    var parseTail = parseInt(tail.innerHTML);
+
+    var imageArr = ['coin-head.jpg', 'coin-tail.jpg'];
+
+    var rand = Math.floor(Math.random() * 2);
+
+    if(imageArr[rand] == imageArr[0]){
+        head.innerHTML = parseHead + 1; 
+    }
+    else{
+        tail.innerHTML = parseTail + 1; 
+    }
+    image.src = "assets/images/"+imageArr[rand];
+}
 
 
 // Question - 6 | Birthday Cake order Form
