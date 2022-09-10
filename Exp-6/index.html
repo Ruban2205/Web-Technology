@@ -37,9 +37,10 @@
                             <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">Questions</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#" class="dropdown-item">Question-1</a></li>
-                                <li><a href="#" class="dropdown-item">Question-2</a></li>
-                                <li><a href="#" class="dropdown-item">Question-3</a></li>
+                                <li><a href="#qn1" class="dropdown-item">Question-1</a></li>
+                                <li><a href="#qn2" class="dropdown-item">Question-2</a></li>
+                                <li><a href="#qn3" class="dropdown-item">Question-3</a></li>
+                                <li><a href="#qn4" class="dropdown-item">Question-4</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -50,6 +51,32 @@
             </div>
         </nav>
     </header>
+
+    <!-- Question - 1 | Digital Clock -->
+    <section id="qn1">
+        <div class="container-fluid clock-container">
+            <div id="clock-display" class="clock text-center" onload="showTime()"></div>
+        </div>
+    </section>
+
+    <!-- Question-2 -->
+    <section id="qn2">
+        <div class="dynamic-bg container-fluid" onload="changeBg()">
+            <h1 class="text-center">Dynamic Background</h1>
+        </div>
+    </section>
+
+    <section id="qn3">
+        <div class="font-container container-fluid">
+            <h3>On mouse over to change font-size</h3>
+            <p id="para-to-change" onmouseover="incSize()" onmouseout="decSize()" class="paragraph text-center">
+                JavaScript is a text-based programming language used both on the client-side and server-side that allows
+                you to make web
+                pages interactive. Where HTML and CSS are languages that give structure and style to web pages,
+                JavaScript gives web
+                pages interactive elements that engage a user.</p>
+        </div>
+    </section>
 
     <!-- External JavaScript -->
     <script src="js/main.js"></script>

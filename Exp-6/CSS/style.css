@@ -30,3 +30,51 @@
     box-shadow: none;
     border: 0;
 }
+
+/* Question - 1 */
+.clock-container {
+    background-color: #222222;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    font-weight: 500;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Question-2 */
+.dynamic-bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+/* Question-3 */
+.font-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph{
+    width: 50rem;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
