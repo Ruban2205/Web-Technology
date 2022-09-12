@@ -63,7 +63,7 @@
 }
 
 /* Question-3 */
-.font-container{
+.font-container, .road-container{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -78,3 +78,18 @@
     font-size: 0.8rem;
 }
 
+
+/* Question-4 */
+.road-img{
+    width: 100%;
+}
+
+.box{
+    position: relative;
+}
+
+.car-img{
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+}

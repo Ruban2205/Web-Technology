@@ -53,3 +53,22 @@ function decSize() {
     document.getElementById("para-to-change").style = "font-size: 0.8rem";
 }
 
+// Question-4
+function init(){
+    imgObj = document.getElementById('car'); 
+    imgObj.style.left = '0px';
+}
+
+function moveRight(){
+    imgObj.style.left = parseInt(imgObj.style.left) + 1 + 'px';
+    animate = setTimeout('moveRight()', 10);
+
+    if (parseInt(imgObj.style.left) >= 1300){
+        stop(); 
+    }
+}
+
+function stop(){
+    clearTimeout(animate);
+    imgObj.style.left = '0px';
+}
