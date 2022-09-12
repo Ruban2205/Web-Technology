@@ -28,7 +28,6 @@ function showTime() {
 }
 showTime();
 
-
 // Question-2
 function changeBg() {
     var red = Math.floor(Math.random() * 255);
@@ -71,4 +70,21 @@ function moveRight(){
 function stop(){
     clearTimeout(animate);
     imgObj.style.left = '0px';
+}
+
+// Question-5
+function studentDetails(){
+    var studentObj = [
+        { name: 'John', regNum: '1234', dob: '10-APR-1995'},
+        { name: 'Joseph', regNum: '12345', dob: '05-JAN-1998'}
+    ];
+
+    for (var i=0; i<studentObj.length; i++){
+        var name = studentObj[i].name; 
+        var regNo = studentObj[i].regNum; 
+        var DOB = studentObj[i].dob; 
+
+        var outputString = "<br>" + "Name: " + name + "<br>" + "Register Number: " + regNo + "<br>" + "Date Of Birth: " + DOB;
+        document.getElementById('student' + (i+1)).innerHTML = outputString; 
+    }
 }
