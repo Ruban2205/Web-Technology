@@ -14,6 +14,9 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Angular JS CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/rubnagino-favicon-logo.png">
 </head>
@@ -53,8 +56,25 @@
 
     <main>
         <!-- Simple comment box using controller -->
-        <section id="qn1">
+        <section id="qn1" ng-app="postComnt">
+            <div class="container">
+                <h3>Question - 1</h3><br>
+                <h4>Simple Comment box controller using Angular JS</h4>
+                <br>
+                <form ng-controller="formController">
+                    <div class="form-group">
+                        <label for="textarea" class="h5">Post Your Comments</label>
+                        <textarea ng-model="txtcomment" class="form-control mt-3" id="comment-box" cols="30" rows="5" placeholder="Your comment here..."></textarea>
+                        <button ng-click="btn_add()" class="btn btn-primary px-5 mt-4">Post comment</button>
 
+                        <h4 class="mt-4">Comments</h4>
+
+                        <ul>
+                            <li ng-repeat="comnt in comment">{{ comnt }} <a href="" class="btn btn-dark" ng-click="remItem($index)">x</a> </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- Simple Calculator using Angular -->
@@ -69,8 +89,22 @@
 
     </main>
 
-    <!-- Angular JS CDN  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("postComnt", []);
+
+        app.controller("formController", function($scope){
+            $scope.comment = []; 
+            $scope.btn_add = function(){
+                if($scope.txtcomment != ''){
+                    $scope.comment.push($scope.txtcomment); 
+                    $scope.txtcomment = ""; 
+                }
+            }
+            $scope.remItem = function($index){
+                $scope.comment.splice($index, 1); 
+            }
+        });
+    </script>
 
     <!-- External JavaScript -->
     <script src="js/app.js"></script>
