@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URK20CS2001 Exp - 8 | Working with angular js directives</title>
+    <title>URK20CS2001 Exp - 8 | Calculator App with Angular</title>
 
     <!-- Bootstrap Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -55,46 +55,50 @@
     </header>
 
     <main>
-        <!-- Simple comment box using controller -->
-        <section id="qn1" ng-app="postComnt">
-            <div class="container">
-                <h3>Question - 1</h3><br>
-                <h4>Simple Comment box controller using Angular JS</h4>
-                <br>
-                <form ng-controller="formController">
-                    <div class="form-group">
-                        <label for="textarea" class="h5">Post Your Comments</label>
-                        <textarea ng-model="txtcomment" class="form-control mt-3" id="comment-box" cols="30" rows="5"
-                            placeholder="Your comment here..."></textarea>
-                        <button ng-click="btn_add()" class="btn btn-primary px-5 mt-4">Post comment</button>
-
-                        <h4 class="mt-4">Comments</h4>
-
-                        <ul>
-                            <li ng-repeat="comnt in comment">{{ comnt }} <a href="" class="btn btn-dark"
-                                    ng-click="remItem($index)">x</a> </li>
-                        </ul>
+        <!-- Simple Calculator using Angular -->
+        <section id="qn2">
+            <div class="container pt-5">
+                <h3>Question - 2</h3><br>
+                <h4>Simple Calculator using Angular JS</h4><br>
+                <form ng-app="CalculatorApp" ng-controller="CalculatorCtrl">
+                    <div class="mb-3">
+                        <label class="form-label">Number 1: </label>
+                        <input type="number" class="form-control mt-2" ng-model="num1">
+                        <label for="form-label" class="mt-3">Number 2:</label>
+                        <input type="number" class="form-control mt-2" ng-model="num2">
                     </div>
+                    <label class="form-label">Select the operator:</label>
+                    <select class="form-select" aria-label="SelectBootstrap" ng-model="operator">
+                        <option value="default">Arithmetic Operations</option>
+                        <option>+</option>
+                        <option>*</option>
+                        <option>-</option>
+                        <option>/</option>
+                    </select>
+                    <h5 class="mt-4">Result: <span>{{ result() }}</span></h5>
                 </form>
             </div>
         </section>
-
     </main>
 
     <script type="text/javascript">
-        var app = angular.module("postComnt", []);
+        var calcApp = angular.module("CalculatorApp", []);
 
-        app.controller("formController", function ($scope) {
-            $scope.comment = [];
-            $scope.btn_add = function () {
-                if ($scope.txtcomment != '') {
-                    $scope.comment.push($scope.txtcomment);
-                    $scope.txtcomment = "";
+        calcApp.controller("CalculatorCtrl", function ($scope) {
+            $scope.result = function () {
+                if ($scope.operator == '+') {
+                    return $scope.num1 + $scope.num2;
                 }
-            }
-            $scope.remItem = function ($index) {
-                $scope.comment.splice($index, 1);
-            }
+                if ($scope.operator == '-') {
+                    return $scope.num1 - $scope.num2;
+                }
+                if ($scope.operator == '*') {
+                    return $scope.num1 * $scope.num2;
+                }
+                if ($scope.operator == '/') {
+                    return $scope.num1 / $scope.num2;
+                }
+            };
         });
 
     </script>
