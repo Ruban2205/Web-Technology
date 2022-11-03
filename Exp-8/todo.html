@@ -58,14 +58,34 @@
         <!-- Simple todo list using controller -->
         <section id="todo-list" ng-app="todoList" ng-controller="todoController">
             <div class="container">
-                
+                <h3>Question - 3</h3>
+                <h4 class="my-3">Simple Todo List app using Angular JS</h4>
+                <label class="form-label mt-3">Add your todo items: </label>
+
+                <div class="input-group mb-3">
+                    <input ng-model="title" type="text" class="form-control" placeholder="Enter your To-Do list" aria-label="todo-data"
+                        aria-describedby="button-addon2">
+                    <button ng-click="add()" class="btn btn-outline-dark" type="button" id="button-addon2">Add</button>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="t in tasks">{{ t }}</li>
+                </ul>
             </div>
         </section>
 
     </main>
 
     <script type="text/javascript">
+        var app = angular.module("todoList", []);
 
+        app.controller("todoController", function($scope){
+            $scope.tasks = []; 
+
+            $scope.add = function(){
+                $scope.tasks.push($scope.title); 
+            };
+        });
     </script>
 
     <!-- Bootstrap Popper JS -->
