@@ -60,7 +60,7 @@
             <div class="container">
                 <h3>Question - 3</h3>
                 <h4 class="my-3">Simple Todo List app using Angular JS</h4>
-                <label class="form-label mt-3">Add your todo items: </label>
+                <label class="form-label mt-3">Add your To-do items: </label>
 
                 <div class="input-group mb-3">
                     <input ng-model="title" type="text" class="form-control" placeholder="Enter your To-Do list" aria-label="todo-data"
@@ -68,12 +68,12 @@
                     <button ng-click="add()" class="btn btn-outline-dark" type="button" id="button-addon2">Add</button>
                 </div>
 
+                <h6 class="mt-4">Your Tasks: </h6>
                 <ul class="list-group">
-                    <li class="list-group-item" ng-repeat="t in tasks">{{ t }}</li>
+                    <li class="list-group-item" ng-repeat="t in tasks">{{ t }} </li>
                 </ul>
             </div>
         </section>
-
     </main>
 
     <script type="text/javascript">
