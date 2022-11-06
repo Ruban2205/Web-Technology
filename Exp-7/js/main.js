@@ -20,9 +20,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#start-btn").click(function () {
         var random1 = Math.floor(Math.random() * (8000 - 500)) + 500;
-
         $('.car1-container').animate({ left: "85%" }, random1);
-        
         console.log(random1);
 
         var random2 = Math.floor(Math.random() * (8000 - 500)) + 500;
