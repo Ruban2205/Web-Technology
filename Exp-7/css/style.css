@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* Navigation Section */
 .navbar-collapse {
     justify-content: end;
@@ -66,7 +70,6 @@
     width: 15%;
     position: absolute;
     top: 60%;
-    left: 87%;
     /* display: none; */
 }
 
@@ -74,7 +77,6 @@
     width: 15%;
     position: absolute;
     top: 78%;
-    left: 87%;
     /* display: none; */
 }
 

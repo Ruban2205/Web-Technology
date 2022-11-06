@@ -19,17 +19,20 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#start-btn").click(function () {
-        var random = Math.floor(Math.random() * (8000 - 500)) + 500;
+        var random1 = Math.floor(Math.random() * (8000 - 500)) + 500;
 
-        $('.car1-container').animate({ left: "85%" }, random);
+        $('.car1-container').animate({ left: "85%" }, random1);
         
-        console.log(random);
+        console.log(random1);
 
-        // $('.car2-container').animate({ left: "85%" }, random);
+        var random2 = Math.floor(Math.random() * (8000 - 500)) + 500;
+        $('.car2-container').animate({ left: "85%" }, random2);
 
-        // $('.car3-container').animate({ right: "85%" }, random);
+        var random3 = Math.floor(Math.random() * (8000 - 500)) + 500;
+        $('.car3-container').animate({ left: "85%" }, random3);
 
-        // $('.car4-container').animate({ right: "85%" }, random);
+        var random4 = Math.floor(Math.random() * (8000 - 500)) + 500;
+        $('.car4-container').animate({ left: "85%" }, random4);
     });
 });
 
