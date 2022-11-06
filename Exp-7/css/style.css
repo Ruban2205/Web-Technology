@@ -8,6 +8,10 @@ body{
     overflow-x: hidden;
 }
 
+main{
+    padding: 10rem 0 0 0 ;
+}
+
 /* Navigation Section */
 .navbar-collapse {
     justify-content: end;
