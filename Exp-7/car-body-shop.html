@@ -42,7 +42,7 @@
                                 aria-expanded="false">Questions</a>
                             <ul class="dropdown-menu">
                                 <li><a href="index.html" class="dropdown-item">Question-1</a></li>
-                                <li><a href="car-body-shop.html" class="dropdown-item">Question-2</a></li>
+                                <li><a href="jquery-form.html" class="dropdown-item">Question-2</a></li>
                                 <li><a href="car-body-shop.html" class="dropdown-item">Question-3</a></li>
                             </ul>
                         </li>
@@ -58,57 +58,14 @@
     <main>
         <section>
             <div class="container">
-                <h3 class="mb-3">Question - 2</h3>
-                <h5 class="mb-3">JQuery Dynamic text operations</h5>
-
-                <div class="q2-btns my-5">
-                    <button class="btn btn-dark px-4 py-2" id="append_to_text">Append Text</button>
-                    <button class="btn btn-dark px-4 py-2" id="append_to_list">Append to List</button>
-                    <button class="btn btn-dark px-4 py-2" id="prepend_to_text">Prepend Text</button>
-                    <button class="btn btn-dark px-4 py-2" id="prepend_to_list">Prepend to List</button>
-                    <button class="btn btn-dark px-4 py-2" id="dynamic_form">Add Form</button>
-                    <button class="btn btn-dark px-4 py-2" id="input">Add Data to input</button>
-                    <button class="btn btn-dark px-4 py-2" id="reset-btn">Reset</button>
-                </div>
-
-                <div class="append_prepend">
-                    <p id="txt">Dynamic!</p>
-                    <ol id="lst" class="list-group">
-                        <li class='list-group-item'>Block</li>
-                        <li class='list-group-item'>Blood</li>
-                        <li class='list-group-item'>Board</li>
-                    </ol>
-                </div>
-                <br><br>
-            </div>
+                
         </section>
     </main>
 
 
     <!-- Internal JavaScript -->
     <script type="text/javascript">
-        $("#dynamic_form").click(function () {
-            $(".append_prepend").append("<input type='text' id='i1' value='Hello'><br><br>");
-        })
-        $("#input").click(function () {
-            data = 'dynamic';
-            $("#i1").val(data);
-        })
-        $("#append_to_text").click(function () {
-            $("#txt").append(" <b>Appended text</b>.");
-        });
-        $("#append_to_list").click(function () {
-            $("#lst").append("<li class='list-group-item'>Appended Item</li>");
-        });
-        $("#prepend_to_text").click(function () {
-            $("#txt").prepend(" <b>Prepended text</b>.");
-        });
-        $("#prepend_to_list").click(function () {
-            $("#lst").prepend("<li class='list-group-item'>Prepended Item</li>");
-        });
-        $("#reset-btn").click(function () {
-            location.reload(true);
-        });
+
     </script>
 
 
