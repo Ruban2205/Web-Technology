@@ -53,13 +53,79 @@
         </nav>
     </header>
 
-    <main>
+    <main ng-app="">
+        <div class="container">
+            <h2>Megaplay Registration 2022</h2>
+            <form name="myForm" id="event-form">
+                <div class="my-3">
+                    <label class="form-label "><b>Name: </b></label>
+                    <input type="text" class="form-control" ng-model="myName" name="myName" aria-describedby="name"
+                        placeholder="Your name" required>
+                    <span id="name" class="form-text text-danger" ng-show="myForm.myName.$error.required">Name is
+                        required!</span>
+                </div>
 
+                <div class="my-3">
+                    <label class="form-label"><b>Register number: </b></label>
+                    <input type="text" class="form-control" ng-model="myRegNo" name="myRegNo" aria-describedby="regno"
+                        placeholder="Your register number" required>
+                    <span id="regno" class="form-text text-danger" ng-show="myForm.myRegNo.$error.required">Register
+                        Number is Required!!!</span>
+                </div>
+
+                <div class="my-3">
+                    <label class="form-label"><b>Year of Study: </b></label>&emsp;
+                    <input type="radio" class="form-check-input" ng-model="myYear" name="myYear" required>
+                    <label class="form-check-label">1st</label>&emsp;
+
+                    <input type="radio" class="form-check-input" ng-model="myYear" name="myYear" required>
+                    <label class="form-check-label">2nd</label>&emsp;
+
+                    <input type="radio" class="form-check-input" ng-model="myYear" name="myYear" required>
+                    <label class="form-check-label">3rd</label>&emsp;
+
+                    <input type="radio" class="form-check-input" ng-model="myYear" name="myYear" required>
+                    <label class="form-check-label">4th</label>&emsp;
+
+                    <span class="form-text text-danger" ng-show="myForm.myYear.$error.checked">Year is required!!!</span>
+                </div>
+
+                <div class="my-3">
+                    <label class="form-label"><b>Department: </b></label>
+                    <select class="form-select" ng-model="department" name="department">
+                        <option value="">Select your department</option>
+                        <option value="1" aria-required="true">Computer Science and Engineering</option>
+                        <option value="2" aria-required="true">Mechanial Engineering</option>
+                        <option value="3" aria-required="true">Civil Engineering</option>
+                    </select>
+
+                    <span class="form-text text-danger" ng-show="myForm.department.$error.invalid">Department is required!!!</span>
+                </div>
+
+                <div class="my-3">
+                    <label class="form-label"><b>Type of Event: </b></label>&emsp;
+                    <input type="checkbox" value="" class="form-check-input" ng-model="myEvent1" name="myEvent1" required>
+                    <label class="form-check-label">Musician</label>&emsp;
+                    
+                    <input type="checkbox" value="" class="form-check-input" ng-model="myEvent2" name="myEvent2">
+                    <label class="form-check-label">Singing</label>&emsp;
+                    
+                    <input type="checkbox" value="" class="form-check-input" ng-model="myEvent3" name="myEvent3">
+                    <label class="form-check-label">Choreography</label>&emsp;
+                
+                    <input type="checkbox" value="" class="form-check-input" ng-model="myEvent4" name="myEvent4">
+                    <label class="form-check-label">Volunteer</label>&emsp;
+                    
+                    <span class="form-text text-danger" ng-show="myForm.myEvent1.$error.required">Event field is required!!!</span>
+                </div>
+
+                <div class="my-3">
+                    <button id="submit-btn" onclick="return alert('Form details submitted Successfully!!!')" class="btn btn-dark">Submit</button>
+                </div>
+
+            </form>
+        </div>
     </main>
-
-    <script type="text/javascript">
-
-    </script>
 
     <!-- Bootstrap Popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
