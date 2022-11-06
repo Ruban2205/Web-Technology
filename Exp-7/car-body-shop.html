@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URK20CS2001 Exp-7 | JQuery Form</title>
+    <title>URK20CS2001 Exp-7 | JQuery Car Body Shop</title>
 
     <!-- Bootstrap Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body-shop.css">
 
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -29,7 +29,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/rubnagino-favicon-logo.png" alt="Navbar-brand-icon" width="32" height="32"
-                        class="d-inline-block align-text-top">&emsp;URK20CS2001 | Exp-7 | Form</a>
+                        class="d-inline-block align-text-top">&emsp;URK20CS2001 | Exp-7 | Car Bodyshop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -58,15 +58,51 @@
     <main>
         <section>
             <div class="container">
-                
-            </div>
+                <h3>Question - 3</h3><br>
+                <h5>Car Body Shop using JQuery</h>
+                <br>
+                <div class="shapes">
+                    <div class="trapezoid"></div>
+                    <div class="rectangle "></div>
+                    <div class="tyre">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <div class="control_buttons">
+                        <button class="btn btn-dark" id="change_glass_color">Change Glass Color</button>
+                        <button class="btn btn-dark" id="change_body_color">Change Body Color</button>
+                        <button class="btn btn-dark" id="increase_tyre_size">Tyre Size Increase</button>
+                        <button class="btn btn-dark" id="decrease_tyre_size">Tyre Size Decrease</button>
+                        <button class="btn btn-dark" id="rl1">Reset</button>
+                    </div>
+                </div>
         </section>
     </main>
 
 
     <!-- Internal JavaScript -->
     <script type="text/javascript">
-
+        $("#change_glass_color").click(function () {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            var color = "#" + randomColor;
+            $(".trapezoid").css("border-bottom-color", color);
+        });
+        $("#change_body_color").click(function () {
+            const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+            var color = "#" + randomColor;
+            $(".rectangle").css("background-color", color);
+        });
+        $("#increase_tyre_size").click(function () {
+            $(".circle").css("width", "+=10");
+            $(".circle").css("height", "+=10");
+        });
+        $("#decrease_tyre_size").click(function () {
+            $(".circle").css("width", "-=10");
+            $(".circle").css("height", "-=10");
+        });
+        $("#rl1").click(function () {
+            location.reload(true);
+        });
     </script>
 
 

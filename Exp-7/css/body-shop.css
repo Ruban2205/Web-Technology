@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --glass-color: #404258;
+    --body-color: #916BBF;
+    --tyre-color: #1B2430; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    padding: 10rem 0 0 0;
+}
+
+/* Navigation Section */
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-item,
+.search,
+.navbar-brand {
+    margin: 1rem;
+}
+
+.navbar {
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+/* Car Body Shop */
+.shapes {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tyre {
+    display: flex;
+}
+
+.trapezoid {
+    border-bottom: 50px solid var(--glass-color);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: var(--tyre-color);
+    border-radius: 50%;
+    margin: 0 50px;
+}
+
+.rectangle {
+    height: 60px;
+    width: 277px;
+    background-color: var(--body-color);
+}
+
+.control_buttons {
+    margin-top: 5rem;
+}
