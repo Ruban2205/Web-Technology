@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URK20CS2001 Exp-7 | JQuery Form</title>
+
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+     <link rel="icon" type="image/png" href="assets/images/rubnagino-favicon-logo.png">
+</head>
+
+<body>
+    <header id="navigation">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/rubnagino-favicon-logo.png" alt="Navbar-brand-icon" width="32" height="32"
+                        class="d-inline-block align-text-top">&emsp;URK20CS2001 | Exp-7 | Form</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Questions</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html" class="dropdown-item">Question-1</a></li>
+                                <li><a href="#" class="dropdown-item">Question-2</a></li>
+                                <li><a href="#" class="dropdown-item">Question-3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="qn1">
+        <div class="container-fluid road-container">
+            <img src="assets/images/road.jpg" alt="" class="road-img">
+        </div>
+        <div class="car1-container car1">
+            <img src="assets/images/car1.png" alt="" class="car1">
+        </div>
+        <div class="car2-container car2" id="car2">
+            <img src="assets/images/car2.png" alt="" class="car2">
+        </div>
+        <div class="car3-container car3" id="car3">
+            <img src="assets/images/car1.png" alt="" class="car3">
+        </div>
+        <div class="car4-container car4" id="car4">
+            <img src="assets/images/car2.png" alt="" class="car4">
+        </div>
+    </section>
+
+    <section class="container buttons justify-content-center text-center">
+        <button class="btn btn-dark car1-btn">Car1</button>
+        <button class="btn btn-dark car2-btn">Car2</button>
+        <button class="btn btn-dark car3-btn">Car3</button>
+        <button class="btn btn-dark car4-btn">car4</button>
+
+        <button id="start-btn" class="btn btn-success">Start</button>
+        <button id="stop-btn" class="btn btn-danger">Stop</button>
+    </section>
+
+
+    <!-- External JavaScript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- Bootstrap Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
