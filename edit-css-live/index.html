@@ -28,4 +28,15 @@
 
 </body>
 
+<script type="text/javascript">
+    let docTitle = document.title;
+    window.addEventListener("blur", () => {
+        document.title = "Come Back :(";
+    });
+
+    window.addEventListener("focus", () => {
+        document.title = docTitle;
+    }); 
+</script>
+
 </html>
