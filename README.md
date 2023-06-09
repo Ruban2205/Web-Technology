@@ -2,15 +2,15 @@
 
 ## Topics 
 
-- Exp-1 Simple Web Design using HTML
-- Exp-2 Working with HTML5 Form and Media Elements
-- Exp-3 Responsive webpage using HTML5 and CSS3
-- Exp-4 Responsive web design using Bootstrap UI Framework
-- Exp-5 JavaScript - DOM Elements and Events 
-- Exp-6 JavaScript - Timer Functions and Objects 
-- Exp-7 Working with JQuery 
-- Exp-8 Working with AngularJS directives 
-- Exp-9 Working with AngularJS Form and Routing 
+- Exp-01 Simple Web Design using HTML
+- Exp-02 Working with HTML5 Form and Media Elements
+- Exp-03 Responsive webpage using HTML5 and CSS3
+- Exp-04 Responsive web design using Bootstrap UI Framework
+- Exp-05 JavaScript - DOM Elements and Events 
+- Exp-06 JavaScript - Timer Functions and Objects 
+- Exp-07 Working with JQuery 
+- Exp-08 Working with AngularJS directives 
+- Exp-09 Working with AngularJS Form and Routing 
 - Exp-10 Web Form Scraping using NodeJS
 
 
