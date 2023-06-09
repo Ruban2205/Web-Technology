@@ -1,5 +1,19 @@
 # Web-Technology
 
+## Topics 
+
+- Exp-1 Simple Web Design using HTML
+- Exp-2 Working with HTML5 Form and Media Elements
+- Exp-3 Responsive webpage using HTML5 and CSS3
+- Exp-4 Responsive web design using Bootstrap UI Framework
+- Exp-5 JavaScript - DOM Elements and Events 
+- Exp-6 JavaScript - Timer Functions and Objects 
+- Exp-7 Working with JQuery 
+- Exp-8 Working with AngularJS directives 
+- Exp-9 Working with AngularJS Form and Routing 
+- Exp-10 Web Form Scraping using NodeJS
+
+
 ### Module 1: HTML and CSS 
 
 Create a static web application pages for e-commerce application & Add styling effects and controls for the web application for e-commerce application. Overview of HTML, Overview of CSS, Backgrounds and color gradients, Fonts and Text Styles, List Styles and Table Layouts - CSS Selectors, Box model, Positioning and Layouts, Effects and Controls in CSS, Overview of Bootstrap. 
