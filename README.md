@@ -1,17 +1,30 @@
-# Web-Technology
+# 🌐 Web Technology Concepts Repository
 
-## Topics 
+This repository contains code examples and tutorials for 10 different concepts of web technology. Each concepts focuses on a specific aspect of web development, providing hands-on examples and explainations to help you learn and implement these concepts effectively.
 
-- Exp-01 Simple Web Design using HTML
-- Exp-02 Working with HTML5 Form and Media Elements
-- Exp-03 Responsive webpage using HTML5 and CSS3
-- Exp-04 Responsive web design using Bootstrap UI Framework
-- Exp-05 JavaScript - DOM Elements and Events 
-- Exp-06 JavaScript - Timer Functions and Objects 
-- Exp-07 Working with JQuery 
-- Exp-08 Working with AngularJS directives 
-- Exp-09 Working with AngularJS Form and Routing 
-- Exp-10 Web Form Scraping using NodeJS
+## Topics and Explainations
+
+#### [Simple Web Design using HTML](/Exp-01)
+In this folder, you will find examples and tutorieals on how to create a simple web design using HTML. Learn the basics of HTML markup, including tags, attributes, and structure, to build static web pages. 
+
+#### [Working with HTML5 Form and Media Elements](/Exp-02)
+
+
+#### [Responsive webpage using HTML5 and CSS3](/Exp-03)
+
+#### [Exp-04 Responsive web design using Bootstrap UI Framework](/Exp-04)
+
+#### [Exp-05 JavaScript - DOM Elements and Events](/Exp-05)
+
+#### [Exp-06 JavaScript - Timer Functions and Objects](/Exp-06)
+
+#### [Exp-07 Working with JQuery](/Exp-07)
+
+#### [Exp-08 Working with AngularJS directives](/Exp-08)
+
+#### [Exp-09 Working with AngularJS Form and Routing ](/Exp-09)
+
+#### [Exp-10 Web Form Scraping using NodeJS](/Exp-10)
 
 
 ### Module 1: HTML and CSS 
