@@ -44,6 +44,20 @@ AngularJS offers powerful features for building web applications, including form
 
 Node.js is a server-side JavaScript runtime that allows you to scrape web forms and retrieve data from websites. Learn how to use Node.js to automate form submissions, interact with web forms, and extract information from web pages.
 
+## 🤝 Contributions
+
+Contributions to this repository are welcome! If you have any improvements, bug fixes, or additional examples to share, please follow these steps:
+
+- Fork the repository.
+- Create a new branch for your feature or bug fix.
+- Make your changes and commit them with descriptive commit messages.
+- Push your changes to your forked repository.
+- Submit a pull request detailing your changes.
+
+The repository maintainer will review your pull request and merge it if it aligns with the goals of the repository. Thank you for your contributions! 🙌
+
+## 📄 License
+This repository is licensed under the [MIT License](/LICENCE). Feel free to use the code and examples provided in this repository for your own projects.
 
 ## Contact
 
