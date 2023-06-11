@@ -2,7 +2,7 @@
 
 This repository contains code examples and tutorials for 10 different concepts of web technology. Each concepts focuses on a specific aspect of web development, providing hands-on examples and explainations to help you learn and implement these concepts effectively.
 
-## Topics and Explainations
+## 🌟 Topics and Explainations
 
 #### > [Simple Web Design using HTML](/Exp-01)
 
