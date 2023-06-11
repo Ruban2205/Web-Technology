@@ -4,32 +4,45 @@ This repository contains code examples and tutorials for 10 different concepts o
 
 ## Topics and Explainations
 
-#### [Simple Web Design using HTML](/Exp-01)
+#### > [Simple Web Design using HTML](/Exp-01)
 
 In this folder, you will find examples and tutorieals on how to create a simple web design using HTML. Learn the basics of HTML markup, including tags, attributes, and structure, to build static web pages. 
 
-#### [Working with HTML5 Form and Media Elements](/Exp-02)
+#### > [Working with HTML5 Form and Media Elements](/Exp-02)
 
 Discover the power of HTML5 forms and media elements. Explore different form input types, validation techniques, and the integration of media elements such as audio and video into your web pages. 
 
-#### [Responsive webpage using HTML5 and CSS3](/Exp-03)
+#### > [Responsive webpage using HTML5 and CSS3](/Exp-03)
 
 Learn how to create responsive webpages using HTML5 and CSS3. Understand the principles of responsive design and explore techniques like media queries, flexbox, and grid to build websites that adapt to different screen sizes and devices. 
 
-#### [Exp-04 Responsive web design using Bootstrap UI Framework](/Exp-04)
+#### > [Responsive web design using Bootstrap UI Framework](/Exp-04)
 
-#### [Exp-05 JavaScript - DOM Elements and Events](/Exp-05)
+Bootstrap is a popular UI framework that provides a set of pre-built components and styles for creating responsive web designs. Dive into Bootstrap and learn how to leverage its features to build visually appealing and mobile-friendly websites. 
 
-#### [Exp-06 JavaScript - Timer Functions and Objects](/Exp-06)
+#### > [JavaScript - DOM Elements and Events](/Exp-05)
 
-#### [Exp-07 Working with JQuery](/Exp-07)
+The Document Object Model (DOM) is a powerful interface for manipulating HTML and XML documents. Discover how to work with DOM elements and handle events using JavaScript, enabling dynamic and interactive web experiences. 
 
-#### [Exp-08 Working with AngularJS directives](/Exp-08)
+#### > [JavaScript - Timer Functions and Objects](/Exp-06)
 
-#### [Exp-09 Working with AngularJS Form and Routing ](/Exp-09)
+Explore timer functions and objects in JavaScript to create time-based interactions on your web pages. Learn how to schedule tasks, set intervals, and handle timeouts to enhance the user experience. 
 
-#### [Exp-10 Web Form Scraping using NodeJS](/Exp-10)
+#### > [Working with JQuery](/Exp-07)
 
+jQuery is a JavaScript library that simplifies HTML document traversing, event handling, and animation. Find examples and tutorials on how to use jQuery to enhance your web pages and streamline common JavaScript tasks.
+
+#### > [Working with AngularJS directives](/Exp-08)
+
+AngularJS directives provide a way to extend HTML with custom behaviors and reusable components. Dive into directives and learn how to create custom directives to encapsulate functionality and enhance your AngularJS applications.
+
+#### > [Working with AngularJS Form and Routing ](/Exp-09)
+
+AngularJS offers powerful features for building web applications, including form handling and routing. Discover how to leverage AngularJS to create dynamic forms and implement client-side routing for a smooth user experience.
+
+#### > [Web Form Scraping using NodeJS](/Exp-10)
+
+Node.js is a server-side JavaScript runtime that allows you to scrape web forms and retrieve data from websites. Learn how to use Node.js to automate form submissions, interact with web forms, and extract information from web pages.
 
 ### Module 1: HTML and CSS 
 
