@@ -5,12 +5,16 @@ This repository contains code examples and tutorials for 10 different concepts o
 ## Topics and Explainations
 
 #### [Simple Web Design using HTML](/Exp-01)
+
 In this folder, you will find examples and tutorieals on how to create a simple web design using HTML. Learn the basics of HTML markup, including tags, attributes, and structure, to build static web pages. 
 
 #### [Working with HTML5 Form and Media Elements](/Exp-02)
 
+Discover the power of HTML5 forms and media elements. Explore different form input types, validation techniques, and the integration of media elements such as audio and video into your web pages. 
 
 #### [Responsive webpage using HTML5 and CSS3](/Exp-03)
+
+Learn how to create responsive webpages using HTML5 and CSS3. Understand the principles of responsive design and explore techniques like media queries, flexbox, and grid to build websites that adapt to different screen sizes and devices. 
 
 #### [Exp-04 Responsive web design using Bootstrap UI Framework](/Exp-04)
 
